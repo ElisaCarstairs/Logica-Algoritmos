@@ -1,0 +1,1 @@
+Const {nombre: 'Marina', promedio: 9}
