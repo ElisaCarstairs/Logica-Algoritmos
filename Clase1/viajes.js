@@ -29,6 +29,7 @@ const calcularCosto = (destino, transporte, personas) => {
 
     switch (transporte) {
         case "Avión": costoBase += 200; break;
+        case "Jet": costoBase += 3200; break;
         case "Tren": costoBase += 100; break;
     }
     switch (personas) {
