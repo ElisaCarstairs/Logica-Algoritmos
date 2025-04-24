@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-family: Comic Neue;
+    font-size: 40px;
+    color: rgb(97, 31, 51);
+}
+form label {
+    display: block;
+    margin-bottom: 10px;    
+    font-family: Onest;
+    font-size: 18px;
+    color: rgb(41, 3, 41);
+}
+form select {
+    font-family: Englebert;
+    font-size: 18px;
+    color: rgb(3, 41, 25);
+}
+form{
+    background-color: rgb(219, 210, 221);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 400px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(97, 31, 51);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3 {
+    text-align: center;
+    font-family: Happy Monkey;
+    font-size: 25px;
+    color: rgb(66, 26, 7);
+    background-color: rgb(190, 211, 211);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 600px;
+}
+h3 h2{
+    font-family: onest;
+    font-size: 50px;
+    color: rgb(190, 147, 26);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Viajes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Englebert&family=Happy+Monkey&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Planificador de Viajes</h1>
+
+    <form id="formulario-viaje">
+        <label for="destino">Destino:</label>
+        <select id="destino">
+            <option value="Paris">París</option>
+            <option value="Londres">Londres</option>
+            <option value="New York">New York</option>
+        </select>
+
+        <label for="transporte">Transporte:</label>
+        <select id="transporte">
+            <option value="Avión">Avión</option>
+            <option value="Tren">Tren</option>
+        </select>
+
+        <label for="personas">Cantidad de Personas:</label>
+        <select id="personas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <button type="submit">Calcular Costo</button>
+    </form>
+    <H3>
+        <div id="resultado"></div>
+    </H3>
+    
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
