@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-family: Comic Neue;
+    font-size: 40px;
+    color: rgb(116, 16, 16);
+}
+form{
+    background-color: rgb(219, 210, 221);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 400px;
+}
+h2{
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(43, 31, 97);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h3 {
+    text-align: center;
+    font-family: onest;
+    font-size: 30px;
+    color: rgb(7, 61, 28);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Happy Monkey;
+}
