@@ -2,24 +2,37 @@ let listaDeCompras = [];
 
 const productoInput = document.getElementById("productoInput");
 const lista = document.getElementById("lista");
+const mensaje = document.getElementById("mensaje");
 
 const mostrarLista = () => {
-  lista.innerHTML = "";
-  listaDeCompras.forEach((producto, index) => {
-    const item = document.createElement("li");
-    item.textContent = `${index + 1}. ${producto}`;
-    lista.appendChild(item);
-  });
-};
+    lista.innerHTML = ""; // limpia lo que había antes
+  
+    if (listaDeCompras.length === 0) {
+      // Si la lista está vacía
+      const item = document.createElement("li");
+      item.textContent = "No hay productos en la lista todavía.";
+      item.style.fontStyle = "italic"; // Opcional: ponerlo en cursiva para que se vea diferente
+      lista.appendChild(item);
+    } else {
+      // Si la lista tiene productos
+      listaDeCompras.forEach((producto, index) => {
+        const item = document.createElement("li");
+        item.textContent = `${index + 1}. ${producto}`;
+        lista.appendChild(item);
+      });
+    }
+  };
+  
 
 const agregar = () => {
     let producto = productoInput.value.trim().toUpperCase(); 
     if (producto && !listaDeCompras.includes(producto)) {
       listaDeCompras.push(producto);
-      mostrarLista();
+      
       productoInput.value = "";
+      mensaje.textContent = "Producto agregado correctamente.";
     } else if (listaDeCompras.includes(producto)) {
-      alert("El producto ya está en la lista.");
+      mensaje.textContent = "El producto ya está en la lista.";
     }
   };
   
@@ -28,10 +41,11 @@ const agregar = () => {
     const index = listaDeCompras.indexOf(producto);
     if (index !== -1) {
       listaDeCompras.splice(index, 1);
-      mostrarLista();
+      
       productoInput.value = "";
+      mensaje.textContent = "Producto eliminado correctamente.";
     } else {
-      alert("El producto no está en la lista.");
+      mensaje.textContent = "El producto no está en la lista.";
     }
   };
   

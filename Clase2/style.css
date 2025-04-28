@@ -45,3 +45,11 @@ ul {
     text-align: center;
     font-family: Happy Monkey;
 }
+p  {
+    text-align: center;
+    font-family: Englebert;
+    font-size: 30px;
+    color: rgb(52, 13, 78);
+    padding: 10px;
+    background-color: rgb(234, 241, 240);
+}
