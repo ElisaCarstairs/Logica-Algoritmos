@@ -13,24 +13,25 @@ const mostrarLista = () => {
 };
 
 const agregar = () => {
-  const producto = productoInput.value.trim();
-  if (producto && !listaDeCompras.includes(producto)) {
-    listaDeCompras.push(producto);
-    mostrarLista();
-    productoInput.value = "";
-  } else if (listaDeCompras.includes(producto)) {
-    alert("El producto ya está en la lista.");
-  }
-};
-
-const eliminar = () => {
-  const producto = productoInput.value.trim();
-  const index = listaDeCompras.indexOf(producto);
-  if (index !== -1) {
-    listaDeCompras.splice(index, 1);
-    mostrarLista();
-    productoInput.value = "";
-  } else {
-    alert("El producto no está en la lista.");
-  }
-};
+    let producto = productoInput.value.trim().toUpperCase(); 
+    if (producto && !listaDeCompras.includes(producto)) {
+      listaDeCompras.push(producto);
+      mostrarLista();
+      productoInput.value = "";
+    } else if (listaDeCompras.includes(producto)) {
+      alert("El producto ya está en la lista.");
+    }
+  };
+  
+  const eliminar = () => {
+    let producto = productoInput.value.trim().toUpperCase(); 
+    const index = listaDeCompras.indexOf(producto);
+    if (index !== -1) {
+      listaDeCompras.splice(index, 1);
+      mostrarLista();
+      productoInput.value = "";
+    } else {
+      alert("El producto no está en la lista.");
+    }
+  };
+  
