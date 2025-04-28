@@ -52,4 +52,15 @@ p  {
     color: rgb(52, 13, 78);
     padding: 10px;
     background-color: rgb(234, 241, 240);
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
 }
+ul {
+    margin-bottom: 10px;
+    background-color: rgb(241, 236, 234);
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 15px;
+}   
