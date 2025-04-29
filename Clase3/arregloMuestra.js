@@ -39,13 +39,13 @@ console.log('El costo total de todos los productos es:', costoTotal);
 //Primero, extraer categorías de producto para luego ordenarlas
 const categoProductos = productos.map(producto => producto.categoria);
 //
-const Electrónica = categoProductos.find(categoria => categoria === "Electrónica");
+const categoElegida = categoProductos.find(categoria => categoria === "Electrónica");
 console.log('Las categorías de los productos son:', categoProductos);
 
-console.log('La categoría seleccionada que debe mostrarse es', Electrónica); //,Electrónica
+console.log('La categoría seleccionada que debe mostrarse es', categoElegida); //,Electrónica
 
 
-const cantidades = () => {
+const contarPorCategoria = () => {
     const cantidades = {};
     productos.forEach(producto => {
         if (!cantidades[producto.categoria]) {
@@ -54,7 +54,8 @@ const cantidades = () => {
             cantidades[producto.categoria]++;
         }
     });
-    console.log('Las cantidades de los productos son:', cantidades);
+    console.log('Las cantidades de los productos por categoría son:', cantidades);
     return cantidades;
-}
+};
+contarPorCategoria();
 
