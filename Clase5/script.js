@@ -20,7 +20,7 @@ function palabraLarga() {
     // Mostrar resultado
     document.getElementById("resultadoPalabra").innerText = `La palabra más larga es: ${palabraMasLarga}`;
   
-    // Limpiar input
+    // Limpiar ingreso de texto
     document.getElementById("inputArray").value = "";
   }
   
