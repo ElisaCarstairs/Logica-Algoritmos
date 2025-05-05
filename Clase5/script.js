@@ -1,38 +1,26 @@
-function calcularMaxSuma() {
-    // Obtener los valores del DOM
-    const inputArray = document.getElementById("inputArray").value;
-    const k = parseInt(document.getElementById("inputK").value);
+function palabraLarga() {
+    const inputTexto = document.getElementById("inputArray").value.trim();
   
-    // Convertir string a arreglo de números
-    const arr = inputArray
-      .split(",")
-      .map(num => parseInt(num.trim()))
-      .filter(n => !isNaN(n));
-  
-    // Validar entrada
-    if (arr.length < k || k <= 0) {
-      document.getElementById("resultado").innerText =
-        "Error: el tamaño k debe ser menor o igual a la longitud del arreglo y mayor que 0.";
+    // Validar si el campo está vacío
+    if (!inputTexto) {
+      document.getElementById("resultadoPalabra").innerText = "Error! No se ha ingresado texto.";
       return;
     }
   
-    // Algoritmo Sliding Window
-    let maxSum = 0;
-    let windowSum = 0;
+    // Dividir en palabras
+    const palabras = inputTexto.split(/\s+/);
+    let palabraMasLarga = "";
   
-    // Suma inicial de los primeros k elementos
-    for (let i = 0; i < k; i++) {
-      windowSum += arr[i];
-    }
-    maxSum = windowSum;
-  
-    // Deslizar la ventana
-    for (let i = k; i < arr.length; i++) {
-      windowSum += arr[i] - arr[i - k];
-      maxSum = Math.max(maxSum, windowSum);
+    for (let palabra of palabras) {
+      if (palabra.length > palabraMasLarga.length) {
+        palabraMasLarga = palabra;
+      }
     }
   
     // Mostrar resultado
-    document.getElementById("resultado").innerText = `La suma máxima es: ${maxSum}`;
+    document.getElementById("resultadoPalabra").innerText = `La palabra más larga es: ${palabraMasLarga}`;
+  
+    // Limpiar input
+    document.getElementById("inputArray").value = "";
   }
   
