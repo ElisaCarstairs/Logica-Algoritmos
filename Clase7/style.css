@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    font-family: Gochi Hand;
+    font-size: 48px;
+    color: rgb(7, 9, 29);
+}
+h2 {
+    font-family: Shantell Sans;
+    font-size: 24px;
+    color: rgb(90, 105, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-family: Mynerve;
+    font-size: 28px;
+    color: rgb(41, 3, 41);
+    border-radius: 5px;
+    border: rgb(218, 187, 199) solid 1px;
+    background-color: rgb(247, 240, 248);
+    width: 70%;
+    height: 100px;
+}
+button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgb(103, 85, 185);    
+    color: white;
+    border: rgb(80, 61, 163) solid 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Handlee;
+    font-size: 20px;
+}
+p { 
+    font-family: Handlee;
+    font-size: 48px;
+    color: rgb(97, 55, 16);
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
